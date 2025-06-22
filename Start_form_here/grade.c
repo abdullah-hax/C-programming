@@ -2,26 +2,26 @@
 #include <stdio.h>
 int main()
 {
-   int num;
-   scanf("%d", &num);
+   int marks;
+   scanf("%d", &marks);
 
-   if (num >= 80 && num <= 100)
+   if (marks >= 80 && marks <= 100)
       printf("A+");
-   else if (num >= 75 && num <= 79)
+   else if (marks >= 75 && marks <= 79)
       printf("A");
-   else if (num >= 70 && num <= 74)
+   else if (marks >= 70 && marks <= 74)
       printf("A-");
-   else if (num >= 65 && num <= 69)
+   else if (marks >= 65 && marks <= 69)
       printf("B+");
-   else if (num >= 60 && num <= 64)
+   else if (marks >= 60 && marks <= 64)
       printf("B-");
-   else if (num >= 55 && num <= 59)
+   else if (marks >= 55 && marks <= 59)
       printf("C+");
-   else if (num >= 50 && num <= 54)
+   else if (marks >= 50 && marks <= 54)
       printf("C-");
-   else if (num < 50 && num >= 0)
+   else if (marks < 50 && marks >= 0)
       printf("Fail");
 
-   if (num > 100 || num < 0)
+   if (marks > 100 || marks < 0)
       printf("Marks is not valid.Please input marks between 0 to 100.");
 }

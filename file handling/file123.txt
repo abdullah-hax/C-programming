@@ -1,0 +1,49 @@
+
+5C138PA#UUF pn
+CND2093LT7 sn
+
+
+date
+and
+or
+
+package main
+
+import mathlib "command-line-argumentsD:\\VS CODE\\Golang\\@packageScope\\#main\\#mathlib\\sub.go"
+
+// it is not built-in library , it is built by user. so it have to be imported by module(example)
+
+func main() {
+	// add(2, 5)
+	mathlib.Ops =100
+	mathlib.Sub(2,4)
+	mathlib.Victory()
+}
+
+
+
+// different package er func, var k access krte hle oi package er library k main package e import krte hbe, jehetu oita user built library tai ekta file create kore import krte hbe.  jesob func , var capital die star hbe only seguloi access kora jabe.
+// ar same package er different file er func, var k access krte kno kicu import krte hbe na, just file 2tak eksate run krle hbe. 
+
+
+
+
+
+
+data link leyar
+presentation leyar
+
+
+
+scripting lang(like python) gulo server e use hbe na
+javascript browser lang
+
+
+
+network layer
+translation leyar
+application leyar (all in one jana lgbe)
+
+
+45 sec
+6.00 - 6.20

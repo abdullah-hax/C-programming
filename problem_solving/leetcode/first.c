@@ -38,6 +38,7 @@ int main()
             if ((nums[i] + nums[j]) == target)
             {
                 printf("indices : %d,%d", i, j);
+                return 0;
             }
         }
     }
