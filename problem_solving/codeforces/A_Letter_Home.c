@@ -1,21 +1,15 @@
+
 /*
-
-
  read testcase(12)
  for i = 1 to (12) :
     read n
     read start
     arr[n]
-    for i= 0 to n-1 :
-       read arr[i]
+    for j= 0 to n-1 :
+       read arr[j]
 
-    if(arr[n-1] > start) :
-       res1 = start - a[0]
-       res2 = arr[n-1] - a[0]
-       res = res1 + res2
-
-    else
-       res = start - a[0]
+       |start - arr[0]| + |arr[n-1] - arr[0]|  or
+       |start - arr[n-1]| + |arr[n-1] - arr[0]|
 
 
 */
@@ -29,7 +23,7 @@ int main()
     scanf("%d", &testcase);
 
     int i;
-    int res, res1, res2;
+    int res;
     int arr_store[testcase];
     for (i = 0; i < testcase; i++)
     {
@@ -43,24 +37,12 @@ int main()
             scanf("%d", &arr[j]);
         }
 
-        if (arr[n - 1] > start)
+        if (abs(start - arr[0]) < abs(start - arr[n - 1]))
         {
-            if ((arr[n - 1] - start) < (start - arr[0]))
-            {
-                res1 = arr[n - 1] - start;
-                res2 = arr[n - 1] - arr[0];
-                res = res1 + res2;
-            }
-            else
-            {
-                res1 = abs(start - arr[0]); // it can be negative , so abs() is used.
-                res2 = arr[n - 1] - arr[0];
-                res = res1 + res2;
-            }
+            res = abs(start - arr[0]) + abs(arr[n - 1] - arr[0]);
         }
-
         else
-            res = abs(start - arr[0]); // it can be negative, so abs() is used.
+            res = abs(start - arr[n - 1]) + abs(arr[n - 1] - arr[0]);
 
         arr_store[i] = res;
     }
