@@ -1,5 +1,7 @@
 /*
 
+Problem link : https://codeforces.com/problemset/problem/791/A
+
 declare limak, bob
 
 read limak, bob

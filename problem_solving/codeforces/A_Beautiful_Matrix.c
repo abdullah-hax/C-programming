@@ -1,4 +1,5 @@
 /*
+Problem link : https://codeforces.com/problemset/problem/263/A
 
 declare arr[5][5]
 read arr[5][5]
@@ -8,12 +9,6 @@ for i = 0 to i = 4 :
      if(a[i][j] == 1)
        result = abs(2-i) + abs(2-j)
        return 0
-
-
-
-
- 
-2/2
 
 */
 
