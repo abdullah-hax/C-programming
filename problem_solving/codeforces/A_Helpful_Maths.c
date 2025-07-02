@@ -1,5 +1,7 @@
 /*
 
+ Problem link : https://codeforces.com/problemset/problem/339/A
+
 declare str[101]
 read str
 

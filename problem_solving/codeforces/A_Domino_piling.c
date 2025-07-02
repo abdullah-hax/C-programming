@@ -1,3 +1,10 @@
+/* 
+
+ problem link : https://codeforces.com/problemset/problem/50/A
+
+*/
+
+
 #include <stdio.h>
 
 int main() {

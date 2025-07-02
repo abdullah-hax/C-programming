@@ -1,6 +1,8 @@
 
 /*
 
+ Problem link : https://codeforces.com/problemset/problem/71/A
+ 
  (1 ≤ row ≤ 100)
  letter lenth 1 to 100
  if letter lenth greater than 10 then organize the word

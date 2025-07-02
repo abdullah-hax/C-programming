@@ -1,3 +1,10 @@
+/* 
+
+ Problem link : https://codeforces.com/contest/2072/problem/A
+
+*/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 

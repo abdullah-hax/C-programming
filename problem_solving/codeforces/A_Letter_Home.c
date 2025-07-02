@@ -1,5 +1,9 @@
 
 /*
+
+Problem link : https://codeforces.com/problemset/problem/2121/A
+
+
  read testcase(12)
  for i = 1 to (12) :
     read n
