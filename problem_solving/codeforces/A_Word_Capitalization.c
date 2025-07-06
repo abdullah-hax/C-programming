@@ -1,5 +1,7 @@
 /*
 
+https://codeforces.com/problemset/problem/281/A
+
 declare str[1001]
 
 scanf(str)

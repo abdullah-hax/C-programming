@@ -1,5 +1,7 @@
 /* 
 
+Problem link : https://codeforces.com/problemset/problem/546/A
+
 fb dollar banana 
 3 17 4
 13 borrow

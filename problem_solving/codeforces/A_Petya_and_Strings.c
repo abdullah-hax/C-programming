@@ -1,3 +1,5 @@
+// Problem link : https://codeforces.com/problemset/problem/112/A
+
 /*
 
    ## alternative but eta boro ##

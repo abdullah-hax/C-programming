@@ -1,5 +1,7 @@
 /*
 
+Problem link : https://codeforces.com/problemset/problem/266/A
+
 declare num
 
 read num
