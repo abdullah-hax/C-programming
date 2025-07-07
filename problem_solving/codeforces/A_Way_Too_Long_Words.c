@@ -2,7 +2,7 @@
 /*
 
  Problem link : https://codeforces.com/problemset/problem/71/A
- 
+
  (1 ≤ row ≤ 100)
  letter lenth 1 to 100
  if letter lenth greater than 10 then organize the word
@@ -22,7 +22,6 @@ p43s
 
 */
 
-
 #include <stdio.h>
 #include <string.h>
 
@@ -31,8 +30,7 @@ int main() {
   scanf("%d", &n);
   // getchar();
 
-  if(n>=1 && n<=100) {
-    char str[n][101];
+  char str[n][101];
 
 /* taking input
 
@@ -44,14 +42,13 @@ int main() {
       int j=0;
       for (; j<101; j++) {
         scanf("%c", &str[i][j]);
-        
+
         if(str[i][j] == '\n'){
           str[i][j] = '\0';
           break;
         }
       }
     }
-
 
    *** method 2 ***
 
@@ -62,7 +59,7 @@ int main() {
       str[i][strcspn(str[i], "\n")] = '\0';    // (shortform, longform hlo string er length ber kore kora)
       i++;
     }
-    
+
 */
 
  // *** method 3 ***  (word er majkane space thakle ei method kaj krbena)
@@ -79,10 +76,8 @@ int main() {
     //     printf("%c", str[i][j]);
     //   }
     // }
-
-
-    i=0;
-    for (; i<n; i++){
+    
+    for (i=0; i<n; i++){
 
       int len = strlen(str[i]);
       if( len > 10 ){
@@ -90,11 +85,78 @@ int main() {
       } else printf("%s\n", str[i]);
 
     }
+}
+
+
+/* 
+
+// === Clean code ===
+
+#include <stdio.h>
+#include <string.h>
+
+void method1()
+{
+  int testcase;
+  scanf("%d", &testcase);
+
+  char str[testcase][101];
+
+  int i;
+  for (i = 0; i < testcase; i++)
+  {
+    scanf("%s", str[i]);
   }
-} 
+
+  i = 0;
+  for (; i < testcase; i++)
+  {
+
+    int len = strlen(str[i]);
+    if (len > 10)
+    {
+      printf("%c%d%c\n", str[i][0], len - 2, str[i][len - 1]);
+    }
+    else
+      printf("%s\n", str[i]);
+  }
+}
+
+void method2()
+{
+  int testcase;
+  scanf("%d", &testcase);
+
+  int i;
+  for (i = 0; i < testcase; i++)
+  {
+    char str[101];
+    scanf("%s", str);
+
+    int len = strlen(str);
+
+    if (len > 10)
+    {
+      printf("%c%d%c\n", str[0], len - 2, str[len - 1]);
+    }
+    else
+    {
+      printf("%s\n", str);
+    }
+  }
+}
+
+int main()
+{
+  // You can use any one method in codeforces
+  method1();
+  method2();
+}
+ 
+*/
 
 
-
+// == Alternative ==
 // #include <stdio.h>
 
 // int main() {
