@@ -58,3 +58,42 @@ int main()
     }
     return 0;
 }
+
+
+/* === Easy method ===
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int testcase;
+    scanf("%d", &testcase);
+
+    int i;
+    int res;
+    for (i = 0; i < testcase; i++)
+    {
+        int n;
+        int start;
+        scanf("%d %d", &n, &start);
+
+        int arr[n];
+        for (int j = 0; j < n; j++)
+        {
+            scanf("%d", &arr[j]);
+        }
+
+        if (abs(start - arr[0]) < abs(start - arr[n - 1]))
+        {
+            res = abs(start - arr[0]) + abs(arr[n - 1] - arr[0]);
+        }
+        else
+            res = abs(start - arr[n - 1]) + abs(arr[n - 1] - arr[0]);
+
+        printf("%d\n", res);
+    }
+    return 0;
+}
+
+*/
