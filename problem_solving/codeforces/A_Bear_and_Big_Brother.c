@@ -16,9 +16,7 @@ for i = 1 to i = 10:
 
 print(i)
 
-******
-
-alternative & best:
+=== alternative & best ===
 
 for i = 1 to i = 10:
     limak = limak * 3
@@ -51,47 +49,53 @@ int main() {
 }
 
 
-// #include <stdio.h>
+/* === Condition is not efficient ===
 
-// int main() {
+#include <stdio.h>
+
+int main() {
     
-//     int limak, bob, i;
-//     scanf("%d %d", &limak, &bob);
+    int limak, bob, i;
+    scanf("%d %d", &limak, &bob);
 
-//     for(i = 1; i<=10; i++){
-//         limak = limak * 3;
-//         bob = bob * 2; 
+    for(i = 1; i<=10; i++){
+        limak = limak * 3;
+        bob = bob * 2; 
 
-//         if(limak > bob){
-//             break;
-//         }
-//     }
+        if(limak > bob){
+            break;
+        }
+    }
 
-//     printf("%d", i);
+    printf("%d", i);
 
-//     return 0;
-// }
-
-
-
-// #include <stdio.h>
-// #include <math.h>
-
-// int main() {
+    return 0;
+} 
     
-//     int limak, bob, a, b, i;
-//     scanf("%d %d", &a, &b);
+*/
 
-//     for(i = 1; i<=10; i++){
-//         limak = a * pow(3, i);
-//         bob = b * pow(2, i);
+/* === Alternative (but lengthy) ===
 
-//         if(limak > bob){
-//             break;
-//         }
-//     }
+#include <stdio.h>
+#include <math.h>
 
-//     printf("%d", i);
+int main() {
+    
+    int limak, bob, a, b, i;
+    scanf("%d %d", &a, &b);
 
-//     return 0;
-// }
+    for(i = 1; i<=10; i++){
+        limak = a * pow(3, i);
+        bob = b * pow(2, i);
+
+        if(limak > bob){
+            break;
+        }
+    }
+
+    printf("%d", i);
+
+    return 0;
+} 
+    
+*/

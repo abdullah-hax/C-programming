@@ -3,13 +3,10 @@
 Problem link : https://codeforces.com/problemset/problem/266/A
 
 declare num
-
 read num
 
 declare str[num + 1]
-
 scanf(str)
-
 
 for i = 0 to i = num - 1:
 

@@ -19,28 +19,18 @@ int main()
   {
     int arr[4], i, j, store;
 
-  // year er every digit arr te store kora
-    // arr[0] = yr % 10;
-    // arr[1] = (yr / 10) % 10;
-    // arr[2] = (yr / 100) % 10;
-    // arr[3] = (yr /1000) ;
-
-    // alternative(it is applicable for n times digit)
+  // year er every digit arr te store kora. ***(see note)
+    
+    // Method 2 (applicable for n times digit)
     for (i = 0, store = yr; i < 4; i++)
     {
       arr[i] = store % 10;
       store = store / 10;
     }
 
-  // kno digit soman na hle yr print kora
-    // if(arr[0] != arr[1] && arr[0] != arr[2] && arr[0] != arr[3] &&
-    //   arr[1] != arr[2] && arr[1] != arr[3] &&
-    //   arr[2] != arr[3]){
-    //     printf("%d", yr);
-    //     break;
-    // }
+  // kno digit soman na hle yr print kora.  ***(see note)
 
-    // alternative(it is applicable for n times digit)
+    // Method (applicable for n times digit)
     int count = 1;
     for (i = 0; i < 4; i++)
     {
@@ -63,3 +53,22 @@ int main()
   }
   return 0;
 }
+
+
+/* === Note ===
+
+  ### Method 1 
+    arr[0] = yr % 10;
+    arr[1] = (yr / 10) % 10;
+    arr[2] = (yr / 100) % 10;
+    arr[3] = (yr /1000) ;
+
+  ### Method 1
+    if(arr[0] != arr[1] && arr[0] != arr[2] && arr[0] != arr[3] &&
+      arr[1] != arr[2] && arr[1] != arr[3] &&
+      arr[2] != arr[3]){
+        printf("%d", yr);
+        break;
+    }
+
+*/

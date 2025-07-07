@@ -1,8 +1,40 @@
 // Problem link : https://codeforces.com/problemset/problem/112/A
 
-/*
 
-   ## alternative but eta boro ##
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+
+int main() {
+
+    char str1[101], str2[101];
+
+    scanf("%s", str1);
+    scanf("%s", str2);
+
+    int len = strlen(str1);
+
+    for(int i = 0; i < len; i++){
+        char c1 = tolower(str1[i]);
+        char c2 = tolower(str2[i]);
+
+        if(c1 > c2){
+            printf("1\n");
+            return 0;
+        }
+
+        else if(c1 < c2){
+            printf("-1\n");
+            return 0;
+        }
+    }
+
+    printf("0\n");
+
+    return 0;
+} 
+
+/* === Alternative (but lengthy) ===
 
 #include <stdio.h>
 #include <ctype.h>
@@ -45,41 +77,7 @@ int main() {
 
 */
 
-#include <stdio.h>
-#include <ctype.h>
-#include <string.h>
-
-int main() {
-
-    char str1[101], str2[101];
-
-    scanf("%s", str1);
-    scanf("%s", str2);
-
-    int len = strlen(str1);
-
-    for(int i = 0; i < len; i++){
-        char c1 = tolower(str1[i]);
-        char c2 = tolower(str2[i]);
-
-        if(c1 > c2){
-            printf("1\n");
-            return 0;
-        }
-
-        else if(c1 < c2){
-            printf("-1\n");
-            return 0;
-        }
-    }
-
-    printf("0\n");
-
-    return 0;
-} 
-
-/*
-   ## alternative ##
+/* === Alternative (make the strings lowercase) ===
 
 #include <stdio.h>
 #include <string.h>

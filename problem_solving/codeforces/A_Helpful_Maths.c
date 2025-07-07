@@ -16,7 +16,8 @@ print(str)
 */
 
 
-/*
+/* === wrong condition ❌ ===
+
 #include <stdio.h>
 #include <string.h>
 
@@ -49,7 +50,10 @@ int main() {
        condition check kore dkbe str[2] != '\0' hoise, but str[2] = grabage value
        hoito tkn 2 & garbage value swap hbe ,tkn str[0] = garbage value, so str = garbage value
        (programiz er compiler e problem hoinai, codeforces & vs code er compiler e emnta ghotse)
+
 */
+
+// so condition hisebe " str[j] != '\0' " use na kore " len " use koro ✅
 
 #include <stdio.h>
 #include <string.h>
@@ -60,7 +64,6 @@ int main() {
     scanf("%s", str);
 
     int i, j;
-
     int len = strlen(str);
 
     for(i = 0; i < len ; i += 2){

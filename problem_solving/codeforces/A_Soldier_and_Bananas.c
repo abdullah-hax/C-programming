@@ -3,7 +3,7 @@
 Problem link : https://codeforces.com/problemset/problem/546/A
 
 fb dollar banana 
-3 17 4
+3   17    4
 13 borrow
 
 1*3 + 2*3 + 3*3 + 4*3 = total
