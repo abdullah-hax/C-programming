@@ -33,6 +33,11 @@ example : jdi kno unstaged file thake tak staged kore commit kre felte hbe then 
 
 ********************************************************
 
+HTTP 408 = Request Timeout
+solve : git bolo boro file transfer krte 
+  git config --global http.postBuffer 524288000
+
+
 */
 
 /*
