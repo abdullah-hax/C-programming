@@ -14,6 +14,8 @@ int main()
     a1[4] = 'o';
     a1[5] = '\0';
 
+    
+
     char a2[] = {'W', 'o', 'r', 'l', 'd', '!', '\0'};
     char a3[] = "Sadik Al Mozahid"; //  Consists of 16 characters,, this array will take 17 index automatically (1 index for null char).
 
